@@ -138,3 +138,21 @@ run;quit;
 ');
 
 
+
+*_                     _
+| |__   _____  __   __| |_   _ _ __ ___  _ __
+| '_ \ / _ \ \/ /  / _` | | | | '_ ` _ \| '_ \
+| | | |  __/>  <  | (_| | |_| | | | | | | |_) |
+|_| |_|\___/_/\_\  \__,_|\__,_|_| |_| |_| .__/
+                                        |_|
+;
+%utlrulr
+ (
+   uinflt   = d:/gz/cars.gz
+  ,uprnlen  = 100    /* Linesize for Dump */
+  ,ulrecl   = 100    /* maximum record length */
+  ,urecfm   = F
+  ,uobs     = 5        /* number of obs to dump */
+  ,uotflt   = d:/txt/cars.txt
+ );
+
