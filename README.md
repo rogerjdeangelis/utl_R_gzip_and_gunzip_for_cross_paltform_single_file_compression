@@ -1,0 +1,2 @@
+# utl_R_gzip_and_gunzip_for_cross_paltform_single_file_compression
+R gzip and gunzip for cross paltform single file compression. Keywords: sas sql join merge big data analytics macros oracle teradata mysql sas communities stackoverflow statistics artificial inteligence AI Python R Java Javascript WPS Matlab SPSS Scala Perl C C# Excel MS Access JSON graphics maps NLP natural language processing machine learning igraph DOSUBL DOW loop stackoverfl SAS community.
