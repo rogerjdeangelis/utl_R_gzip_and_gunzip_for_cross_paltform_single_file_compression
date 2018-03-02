@@ -1,5 +1,7 @@
 R gzip and gunzip for cross paltform single file compression
 
+  Added an unzip using just SAS/WPS on the end. You do not have to unzip the entile file
+
   Use R base function 'zip' and 'unzip' for more flexible
   mutiple file and directory compression.
 
@@ -155,4 +157,28 @@ run;quit;
   ,uobs     = 5        /* number of obs to dump */
   ,uotflt   = d:/txt/cars.txt
  );
+
+
+* look for a safe site to download gzip - there are many options;
+
+Input the first 5 records from a gz file
+
+filename foo pipe '"d:\exe\gzip.exe" -cd d:/gz/cars.gz' ;
+data _null_;
+  infile foo ;
+  input ;
+  put _infile_;
+  if _n_=5 then stop;
+run;
+
+MAKE,MODEL,TYPE,ORIGIN,DRIVETRAIN,MSRP,INVOICE,ENGINESIZE,CYLIND
+ERS,HORSEPOWER,MPG_CITY,MPG_HIGHWAY,WEIGHT,WHEELBASE,LENGTH
+Acura,MDX,SUV,Asia,All,"$36,945","$33,337",3.5,6,265,17,23,4451,
+106,189
+Acura,RSX Type S 2dr,Sedan,Asia,Front,"$23,820","$21,761",2,4,20
+0,24,31,2778,101,172
+Acura,TSX 4dr,Sedan,Asia,Front,"$26,990","$24,647",2.4,4,200,22,
+29,3230,105,183
+Acura,TL 4dr,Sedan,Asia,Front,"$33,195","$30,299",3.2,6,270,20,2
+8,3575,108,186
 
